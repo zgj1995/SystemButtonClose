@@ -4,7 +4,9 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap mp rescap "
+  >
 
   <Identity
     Name="1c0deaab-c97e-461c-bd4a-4f2fb68cdf45"
@@ -45,5 +47,6 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
+  <rescap:Capability Name="confirmAppClose"/>
   </Capabilities>
 </Package>
